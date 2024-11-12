@@ -1,0 +1,10 @@
+.navbar {
+    background-color: #888181c4;
+}
+.navbar-brand {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+.nav-link {
+    margin: 0 10px;
+}
