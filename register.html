@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <link rel="stylesheet" href="css/style_register.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
 <body>
-    
+    <div class="container-fluid d-flex justify-content-center align-items-center min-vh-100">
+        <div class="card p-5 shadow-lg" style="max-width: 500px;">
+            <h2 class="text-center mb-4">Register</h2>
+            <form>
+                <div class="form-group mb-3">
+                    <label for="first_name">First Name</label>
+                    <input type="text" class="form-control" id="first_name" placeholder="First Name" required>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" class="form-control" id="last_name" placeholder="Last Name" required>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="password">Create New Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter New Password" required>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirm_password" placeholder="Confirm New Password" required>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary btn-sm">Register</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
 </body>
 </html>
-
