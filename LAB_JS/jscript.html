@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Caesar Cipher</title>
+</head>
+<body>
+    <script src="INDEX.js"></script>
+    <div class="container">
+        <h2>Caesar Cipher</h2>
+    </div>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Encrypt</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Decrypt</button>
+        </li>
+    </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-2">
+                        <span class="align-middle">Plain Text:</span>
+                    </div>
+                    <div class="col-7 ">
+                        <input class="form-control" id="plain_txt" type="text">
+                    </div>   
+                </div>
+                <div class="row ">
+                    <div class="col-2">
+                        <span class="align-middle">Shift:</span>
+
+                    </div>
+                    <div class="col-7" >
+                        <input class="form-control" id="shift_value1" type="text" aria-label="default input example">
+                    </div>   
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <span class="align-middle">Cipher Text:</span>
+                    </div>
+                    <div class="col-7">
+                        <input class="form-control" id="encrypt_txt1" value="" type="text" aria-label="default input example" disabled>
+                    </div>   
+                </div>
+                <div class="row">
+                    <div class="col-7 text-center">
+                        <button type="button" onclick="encryption_txt()" class="btn btn-danger">Encrypt</button>
+                 
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Decrypt from cipher text to plain text -->
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <div class="container">
+                <div class="row align-middle">
+                    <div class="col-2">
+                        <span class="align-middle">Cipher:</span>
+                    </div>
+                    <div class="col-7 ">
+                        <input class="form-control" id="encrypt_txt2" type="text" aria-label="default input example">
+                    </div>   
+                </div>
+                <div class="row ">
+                    <div class="col-2">
+                        <h5>Shift:</h5>
+
+                    </div>
+                    <div class="col-7" >
+                        <input class="form-control" id="shift_value2" type="text" aria-label="default input example">
+                    </div>   
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <h5>Plain Text:</h5>
+                    </div>
+                    <div class="col-7">
+                        <input class="form-control" id="decrypt_txt2" type="text" aria-label="default input example" disabled>
+                    </div>   
+                </div>
+                <div class="row">
+                    <div class="col-7 text-center">
+                        <button type="button" onclick="decryption_txt()" class="btn btn-warning">Decrypt</button>
+                    </div>
+                    
+                </div>
+              </div>
+        </div>
+        
+      </div>
+      
+</body>
+</html>

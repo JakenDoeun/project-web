@@ -1,0 +1,23 @@
+.container h2{
+    margin-top: 60px;
+    font-weight: 600;
+}
+.nav-tabs, .tab-content {
+    width: 70%;
+    margin-left: 50px;
+}
+.tab-content > .active {
+    padding-top: 20px;
+  }
+.container{
+    margin-left: 20px;
+}
+.row h5{
+    font-size: 15px;
+}
+.row{
+    margin: 20px 10px;
+}
+.btn{
+    width: 90px;
+}
